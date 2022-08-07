@@ -1,0 +1,16 @@
+{
+    "name": "Audi A4 2013-2016",
+    "description": "Audi A4 modelo desde el 2013 al 2016",
+    "image": "https://gateway.pinata.cloud/ipfs/QmctCqjqxiXvTLstAU71iXvs9iFymbVkWZKsRAZyMsURTG",
+    "attributes": [
+        {
+            "trait-type": "ModeloDesde",
+            "value": "2013"
+        },
+        {
+            "trait-type": "ModeloHasta",
+            "value": "2016"
+        }
+    ]
+  }
+  

@@ -1,0 +1,15 @@
+{
+  "name": "Audi A4 2006-2008",
+  "description": "Audi A4 modelo desde el 2006 al 2008",
+  "image": "https://gateway.pinata.cloud/ipfs/QmdQYDLsJMUa9rSWLygLnntAKh3Jq3Ude42Pgtu2ns7GNZ",
+  "attributes": [
+      {
+          "trait-type": "ModeloDesde",
+          "value": "2006"
+      },
+      {
+          "trait-type": "ModeloHasta",
+          "value": "2008"
+      }
+  ]
+}

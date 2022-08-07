@@ -1,0 +1,16 @@
+{
+    "name": "Audi A4 2009-2012",
+    "description": "Audi A4 modelo desde el 2017 al 2019",
+    "image": "https://gateway.pinata.cloud/ipfs/QmZBbrhFtFVNRMR8nNG586XmZWKgBS6xPm4NZDjzqRAKj3",
+    "attributes": [
+        {
+            "trait-type": "ModeloDesde",
+            "value": "2017"
+        },
+        {
+            "trait-type": "ModeloHasta",
+            "value": "2019"
+        }
+    ]
+  }
+  

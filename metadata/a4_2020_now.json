@@ -1,0 +1,15 @@
+{
+  "name": "Audi A4 2020-Present",
+  "description": "Audi A4 modelo desde el 2020 en adelante",
+  "image": "https://gateway.pinata.cloud/ipfs/QmTvBQxF8Uhh99zj1SFvBgZj2xXsgwDjf3QKJhf2fhnRUZ",
+  "attributes": [
+      {
+          "trait-type": "ModeloDesde",
+          "value": "2020"
+      },
+      {
+          "trait-type": "ModeloHasta",
+          "value": "Presente"
+      }
+  ]
+}
