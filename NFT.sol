@@ -41,7 +41,7 @@ contract audiA4Models is ERC721, ERC721URIStorage, KeeperCompatibleInterface {
     function performUpkeep(bytes calldata /* performData */) external override {
         //We highly recommend revalidating the upkeep in the performUpkeep function
         if ((block.timestamp - lastTimeStamp) > interval ) {
-            lastTimeStamp = block.timestamp;            
+            lastTimeStamp = block.timestamp;
             uint256 tokenId = tokenIdCounter.current() - 1;
             getNewCarModel(tokenId);
         }
@@ -57,13 +57,20 @@ contract audiA4Models is ERC721, ERC721URIStorage, KeeperCompatibleInterface {
 
     function getNewCarModel(uint256 _tokenId) public {
         // Since we have 5 stages now, we change the 2 for a 4
-        if(carModelStage(_tokenId) >= 4){return;}
-        // Get the current stage of the car models and add 1
-        uint256 newVal = carModelStage(_tokenId) + 1;
-        // store the new URI
-        string memory newUri = IpfsUri[newVal];
-        // Update the URI
-        _setTokenURI(_tokenId, newUri);
+        if(carModelStage(_tokenId) >= 4){
+            // if we get to the last stage we come back to the first models.
+            string memory newUri = IpfsUri[0];
+            // Update the URI
+            _setTokenURI(_tokenId, newUri);
+            return;
+        } else {
+            // Get the current stage of the car models and add 1
+            uint256 newVal = carModelStage(_tokenId) + 1;
+            // store the new URI
+            string memory newUri = IpfsUri[newVal];
+            // Update the URI
+            _setTokenURI(_tokenId, newUri);
+        }
     }
 
     // determine the stage of the car models
